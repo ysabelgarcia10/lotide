@@ -1,17 +1,17 @@
 //takes two array and return ture or false based on a perfect match
 const eqArrays = function(array1, array2) {
-  //are the arrays equal? let answer be false at default.
-  let isEqual = "";
   //iterates through the two arrays and identifies if that same element in the two arrays are the same
   for (let i = 0; i < array1.length; i++) {
-    if (array1[i] === array2[i]) {
-      isEqual = true;
-    } else {
-      isEqual = false;
+    //if length of arrays are not equal, the code stops immediately
+    if (array1.length !== array2.length) {
+      return false;
+    }
+    //if same element are not equal, code returns false
+    if (array1[i] !== array2[i]) {
+      return false;
     }
   }
-  console.log(isEqual);
-  return isEqual;
+  return true;
 };
 
 //evaluates whether two parameters are equal
