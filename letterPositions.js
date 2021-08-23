@@ -47,8 +47,3 @@ const letterPositions = function(sentence) {
 };
 
 assertArraysEqual(letterPositions("hello").l, [2, 3]);
-
-
-// assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
-// assertArraysEqual([1, 5, 3], [1, 2, 8]); // => should FAIL
-// assertArraysEqual([1, 2, 3, 4], [1, 2, 3]); // => should FAIL

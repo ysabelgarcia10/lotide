@@ -32,11 +32,13 @@ const eqObjects = function(object1, object2) {
         if (!eqArrays(object1[key], object2[key])) {
           return false;
         }
+        //sees if they have the same key name, if not return false
       } else if (object1[key] !== object2[key]) {
         return false;
       }
     }
   }
+  //if the same number of keys, if both objects have the same name of keys, if the same keys in each object have the same exact value (whether primitive or array), then return true
   return true
 };
 
@@ -57,7 +59,7 @@ const abc = { a: "1", b: "2", c: "3" };
 assertEqual(eqObjects(ab, abc), false); // => false
 
 console.log("-------")
-const cd = { c: "1", d: ["2", 3] };
+const cd = { c: "1", e: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 assertEqual(eqObjects(cd, dc), true); // => true
 
