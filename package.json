@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@ygarcia10/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "a clone of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -11,9 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ysabelgarcia10/lotide.git"
+    "url": "https://github.com/ysabelgarcia10/lotide.git"
   },
-  "author": "",
+  "author": "Ysabel Garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ysabelgarcia10/lotide/issues"
